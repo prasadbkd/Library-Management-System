@@ -1,0 +1,181 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "persons": [
+    {
+      "name": "Prasad BKD",
+      "email": "prasad@gmail.com",
+      "password": "prasad123",
+      "id": 1
+    },
+    {
+      "name": "Emma Watson",
+      "email": "emma@gmail.com",
+      "password": "emma123",
+      "id": 2
+    }
+  ],
+  "librarians": [
+    {
+      "name": "Prasad BKD",
+      "email": "prasad@gmail.com",
+      "password": "prasad123",
+      "id": 1
+    },
+    {
+      "name": "Diana Prince",
+      "email": "diana@gmail.com",
+      "password": "wonderwoman",
+      "id": 2
+    }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "title": "Harry Potter And the Philospher's Stone",
+      "author": "J.K Rowling",
+      "rack": "h1",
+      "genere": "fiction",
+      "no_copies": 0,
+      "issued_to": [
+        "Emma Watson"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Harry Potter And the Chamber of Secrets",
+      "author": "J.K Rowling",
+      "rack": "h2",
+      "genere": "fiction",
+      "no_copies": 0,
+      "issued_to": [
+        "Prasad BKD"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Harry Potter And the Prisioner of Azakaban",
+      "author": "J.K Rowling",
+      "rack": "h3",
+      "genere": "fiction",
+      "no_copies": 1,
+      "issued_to": []
+    },
+    {
+      "id": 4,
+      "title": "Harry Potter And the Goblet of Fire",
+      "author": "J.K Rowling",
+      "rack": "h4",
+      "genere": "fiction",
+      "no_copies": 0,
+      "issued_to": [
+        "Prasad BKD",
+        "Emma Watson"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Harry Potter And the Order of the Phoenix",
+      "author": "J.K Rowling",
+      "rack": "h4",
+      "genere": "fiction",
+      "no_copies": 1,
+      "issued_to": []
+    },
+    {
+      "id": 6,
+      "title": "Harry Potter And the Half Blood Prince",
+      "author": "J.K Rowling",
+      "rack": "h3",
+      "genere": "fiction",
+      "no_copies": 1,
+      "issued_to": []
+    },
+    {
+      "id": 7,
+      "title": "Harry Potter And the Deadly Hallows",
+      "author": "J.K Rowling",
+      "rack": "h3",
+      "genere": "fiction",
+      "no_copies": 1,
+      "issued_to": [
+        "Prasad BKD",
+        "Emma Watson"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Becoming",
+      "author": "Michelle Obama",
+      "rack": "B1",
+      "genere": "Memoir",
+      "no_copies": 0,
+      "issued_to": [
+        "Prasad BKD"
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Wings of Fire",
+      "author": "A.P.J Abdul Kalam",
+      "rack": "W1",
+      "genere": "Auto Biography",
+      "no_copies": 1,
+      "issued_to": []
+    },
+    {
+      "id": 10,
+      "title": "The Audacity of Hope",
+      "author": "Barrak Obama",
+      "rack": "T1",
+      "genere": "Memoir",
+      "no_copies": 0,
+      "issued_to": [
+        "Prasad BKD"
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future",
+      "author": "Ashlee Vance",
+      "rack": "E1",
+      "genere": "Biography",
+      "no_copies": 1,
+      "issued_to": []
+    },
+    {
+      "id": 12,
+      "title": "The Subtle Art of Not Giving a F*ck",
+      "author": "Mark Manson",
+      "rack": "T1",
+      "genere": "Self Help",
+      "no_copies": 1,
+      "issued_to": []
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "Nice Application. Please add Turtles All the way down by John Green to the Library. ",
+      "username": "Prasad BKD"
+    },
+    {
+      "body": "Please add Harry Potter and The Cursed child to the library.",
+      "username": "Prasad BKD",
+      "id": 2
+    },
+    {
+      "body": "Please add Little Woman to the Library. Thanks in advance",
+      "username": "Emma Watson",
+      "id": 3
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
