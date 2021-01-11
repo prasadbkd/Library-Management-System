@@ -50,8 +50,8 @@ import Nav from './libnav'
         
         let commentList = this.state.comments.map((comment)=>{
             return (
-                <div class="container">
-                            <div class="jumbotron" id='comment'>
+                <div className="container" key={comment.id}>
+                            <div className="jumbotron" id='comment'>
                               <span onDoubleClick={()=>this.DeleteComment(comment)}> <b className='comment-user'>{comment.username}</b> : {comment.body}</span> 
                             </div>
                 </div>
@@ -63,9 +63,9 @@ import Nav from './libnav'
         return (
             <div>
                 <Nav></Nav>
-                    <div class="container" id='comment-intro'>
-                            <div class="jumbotron" id='comment-intro-body'>
-                                <h6>As a Librarian you have the ability to delete ❌ any comment made by any user just by double clicking it.
+                    <div className="container" id='comment-intro'>
+                            <div className="jumbotron" id='comment-intro-body'>
+                                <h6>As a Librarian you have the ability to delete ❌ any comment made by any user just by double clickig it.
                                 </h6>
                             </div>
                     </div>

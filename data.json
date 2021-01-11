@@ -114,10 +114,8 @@
       "author": "Michelle Obama",
       "rack": "B1",
       "genere": "Memoir",
-      "no_copies": 0,
-      "issued_to": [
-        "Prasad BKD"
-      ]
+      "no_copies": 1,
+      "issued_to": []
     },
     {
       "id": 9,

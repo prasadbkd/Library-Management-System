@@ -55,17 +55,17 @@ import NavLog from './usernav'
         let form=[]
         let commentList = this.state.comments.map((comment)=>{
             return (
-                <div class="container">
-                            <div class="jumbotron" id='comment'>
-                                <b className='comment-user'>{comment.username}</b> : {comment.body}
+                <div className="container" key={comment.id}>
+                            <div className="jumbotron" id='comment' >
+                                <b className='comment-user'  >{comment.username}</b> : {comment.body}
                             </div>
                 </div>
             )
         })
         if(user===null){
             form.push(
-            <div class="container" >
-            <div class="jumbotron" id='comment-form'>
+            <div className="container"  key={1} >
+            <div className="jumbotron" id='comment-form'>
             <form onSubmit={this.postComment}  >
             <input value={this.state.comment} className="form-control" id='comments_input' onChange={this.handleChange} placeholder="Login to Comment.." readOnly/>
             <br></br><input type="submit" className="btn btn-primary" value="Comment" disabled />
@@ -73,12 +73,12 @@ import NavLog from './usernav'
             </form>
             </div>
     </div>)
-            nav.push(<Nav></Nav>)    
+            nav.push(<Nav key={3}></Nav>)    
     
 }
     else{
-       form.push( <div class="container" >
-        <div class="jumbotron" id='comment-form'>
+       form.push( <div className="container"  key={2} >
+        <div className="jumbotron" id='comment-form'>
         <form onSubmit={this.postComment} >
         <input value={this.state.comment} className="form-control" id='comments_input' onChange={this.handleChange} placeholder="Comments.." />
         <br></br><input type="submit" className="btn btn-primary" value="Comment" />
@@ -86,14 +86,14 @@ import NavLog from './usernav'
         </form>
         </div>
 </div>)
- nav.push(<NavLog></NavLog>) 
+ nav.push(<NavLog  key={4}></NavLog>) 
     }
         
         return (
             <div>
                 {nav}
-                    <div class="container" id='comment-intro'>
-                            <div class="jumbotron" id='comment-intro-body'>
+                    <div className="container" id='comment-intro'>
+                            <div className="jumbotron" id='comment-intro-body'>
                                 <h6>Tell us how you feel. Feel Free to Appreciate or criticize. We value your suggetions and try to improve ourselves.
                                     If you want us to include more  books or more copies of a particular book please comment.... 📝 
                                 </h6>
