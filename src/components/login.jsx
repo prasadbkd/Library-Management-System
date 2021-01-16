@@ -54,6 +54,20 @@ class login extends Component {
       )
       .catch(error => console.log(error));
   }
+  componentDidUpdate() {
+    fetch(
+      "https://library-management-syste-4e4be-default-rtdb.firebaseio.com/persons.json"
+    )
+      .then(result =>
+        result.json().then(data => {
+          console.log(data);
+          this.setState({
+            accounts: Object.entries(data)
+          });
+        })
+      )
+      .catch(error => console.log(error));
+  }
   submitMember = event => {
     event.preventDefault();
 
