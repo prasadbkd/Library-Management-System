@@ -30,7 +30,7 @@ class libHome extends Component {
       .then(result =>
         result.json().then(data =>
           this.setState({
-            persons: data
+            persons: Object.entries(data)
           })
         )
       )
@@ -50,7 +50,7 @@ class libHome extends Component {
     let names = ["none"];
     let persons = this.state.persons;
     for (let i = 0; i < persons.length; i++) {
-      names.push(persons[i].name);
+      names.push(persons[i][1].name);
     }
     console.log(names);
     let options = names.map(name => <option value={name}>{name}</option>);

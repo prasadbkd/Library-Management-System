@@ -95,10 +95,10 @@ class login extends Component {
     let authenticated_user = {};
     for (let i = 0; i < accounts.length; i++) {
       if (
-        accounts[i].email === this.state.email &&
-        accounts[i].password === this.state.password
+        accounts[i][1].email === this.state.email &&
+        accounts[i][1].password === this.state.password
       ) {
-        authenticated_user = accounts[i];
+        authenticated_user = accounts[i][1];
         let authenticated_user_serialized = JSON.stringify(authenticated_user);
         localStorage.setItem(
           "authenticted_user",
