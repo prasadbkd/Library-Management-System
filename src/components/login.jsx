@@ -33,11 +33,12 @@ class login extends Component {
       "https://library-management-syste-4e4be-default-rtdb.firebaseio.com/persons.json"
     )
       .then(result =>
-        result.json().then(data =>
+        result.json().then(data => {
+          console.log(data);
           this.setState({
-            accounts: data
-          })
-        )
+            accounts: Object.entries(data)
+          });
+        })
       )
       .catch(error => console.log(error));
 
@@ -47,7 +48,7 @@ class login extends Component {
       .then(result =>
         result.json().then(data =>
           this.setState({
-            librarian: data
+            librarian: Object.entries(data)
           })
         )
       )
@@ -62,10 +63,10 @@ class login extends Component {
     for (let i = 0; i < accounts.length; i++) {
       console.log(accounts[i]);
       if (
-        accounts[i].email === this.state.email &&
-        accounts[i].password === this.state.password
+        accounts[i][1].email === this.state.email &&
+        accounts[i][1].password === this.state.password
       ) {
-        authenticated_user = accounts[i];
+        authenticated_user = accounts[i][1];
         // localStorage.setItem("authenticted_useremail",authenticated_user.email)
         // localStorage.setItem("authenticted_username",authenticated_user.name)
         // localStorage.setItem("authenticted_userid",authenticated_user.id)
